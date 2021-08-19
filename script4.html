@@ -1,0 +1,17 @@
+function getage(date) {
+  let diff = Date.now() - date.getTime();
+  let age = new Date(diff);
+  return Math.abs(age.getMilliseconds() - 1970);
+  getage(date)
+  console.log
+  }
+
+  console.log("**********Parcourons le array :")
+  for(let index in entrepreneurs) {
+  console.log(index); // index va aller de 0 à 3
+  console.log(entrepreneurs[index]);
+}
+console.log("**********Parcourons le array en forEach :")
+entrepreneurs.forEach(entrepreneurs => {
+  console.log(entrepreneurs)
+});

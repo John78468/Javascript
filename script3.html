@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      nb = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+      function pyramid(etage) {
+          let i = 0;
+          row = " ";
+          while (i != etage) {
+            row += " ";
+            i++;
+          }
+          while (etage != 0) {
+            row = row.substring(1);
+            row += "*";
+            console.log(row);
+            etage -= 1;
+          }
+        }
+        pyramid(nb);
+      
+
+    </script>
+</body>
+</html>
